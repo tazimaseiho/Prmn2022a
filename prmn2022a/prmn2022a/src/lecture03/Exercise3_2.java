@@ -8,6 +8,7 @@ public class Exercise3_2 {
         ArrayList<String> list  = new ArrayList<>();
         System.out.print("何行分入力しますか？");
         int a = input.nextInt();
+
         for(int i = 1;i <= a;i++){
             System.out.print(i + "行目:");
             String b = input.next();
