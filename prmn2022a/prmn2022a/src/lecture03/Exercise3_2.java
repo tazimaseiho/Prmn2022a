@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Exercise3_2 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         ArrayList<String> list  = new ArrayList<>();
         System.out.print("何行分入力しますか？");
         int a = input.nextInt();
