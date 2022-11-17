@@ -14,8 +14,8 @@ public class Exercise3_2 {
             list.add(b);
         }
         System.out.println("入力した文字列:");
-        for(String str : list){
+            for(String str:list){
             System.out.println(str);
+            }
         }
         }
-    }
