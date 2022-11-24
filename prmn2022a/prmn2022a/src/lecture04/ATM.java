@@ -14,11 +14,9 @@ public class ATM {
         int i;
         for (i = 0; i < accountList.size(); i++) {
             if (accountList.get(i).name.equals(name) && accountList.get(i).number.equals(number)) {
-                System.out.println("名前:" + name + "　口座番号" + number + "は存在します。");
                 return true;
             }
         }
-        System.out.println("名前:" + name + "　口座番号" + number + "は存在しません。");
         return false;
     }
 
@@ -38,13 +36,20 @@ public class ATM {
             if (accountList.get(i).number.equals(number)) {
                 if (accountList.get(i).balance < money) {
                     System.out.println("口座番号:" + number + "から" + money + "円引き出せませんでした。" + "残高:" + accountList.get(i).balance + "円です。");
-                    return 0;
+                    return 1;
                 }
-                    accountList.get(i).balance = accountList.get(i).balance - money;
-                    System.out.println("口座番号:" + number + "から" + money + "円引き出しました。" + "残高:" + accountList.get(i).balance + "円です。");
-                }
+                accountList.get(i).balance = accountList.get(i).balance - money;
+                System.out.println("口座番号:" + number + "から" + money + "円引き出しました。" + "残高:" + accountList.get(i).balance + "円です。");
             }
-        return 0;
         }
+        return 0;
     }
 
+    public String getName(String name){
+        return name;
+    }
+
+    public String getNumber(String number) {
+                return number;
+            }
+}
