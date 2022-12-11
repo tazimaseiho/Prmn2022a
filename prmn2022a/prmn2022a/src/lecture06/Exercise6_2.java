@@ -18,7 +18,7 @@ public class Exercise6_2 {
             System.out.print("何番目の値を確認しますか?");
             int index = input.nextInt();
             System.out.println(list.get(index));
-        }catch (ArrayIndexOutOfBoundsException e1){
+        }catch (IndexOutOfBoundsException e1){
          System.out.println("ArrayListの範囲外アクセスを確認しました。");
         }catch (InputMismatchException e2){
             System.out.println("整数以外の値が入力されました。");
